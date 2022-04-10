@@ -2,3 +2,4 @@
 // ignore executed program files
 
 *.exe
+*.vscode
