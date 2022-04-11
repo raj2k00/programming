@@ -10,25 +10,43 @@ public:
     string category;
     string sound;
     int noOfLegs;
+
+    /* Constructors are executed whenever we create an object
+        so we use it make initial values if no value is passed while
+        creating object default constructor will be executed with default
+        values mentioned in it.*/
+
+    // Creating Default Constructor
+    Animal()
+    {
+        category = "Not Mentioned";
+        sound = "Not Mentioned";
+        noOfLegs = 0;
+    }
+
+    // Creating constructor with arguments
+    Animal(string aCategory, string aSound, int aNoOfLegs)
+    {
+        category = aCategory;
+        sound = aSound;
+        noOfLegs = aNoOfLegs;
+    }
 };
 
 int main()
 {
-    // Creating Dog with Animal template
-    Animal dog;
+    /* Creating Dog with Animal template with attributes.
+    (Make use of parametrized construtor)*/
 
-    // Defining it's attributes
-    dog.category = "Mammal";
-    dog.sound = "Bark";
-    dog.noOfLegs = 4;
+    Animal dog("Mammal", "Bark", 4);
 
-    Animal cat;
+    Animal cat("Mammal", "Meow", 4);
 
-    cat.category = "Mammal";
-    cat.sound = "Meow";
-    cat.noOfLegs = 4;
+    // No parameter given so default one will be executed
+    Animal unknown;
 
-    cout << cat.sound;
+    cout << cat.sound << endl; // Meow
+    cout << unknown.sound;     // Not Mentioned
 
     return 0;
 }
