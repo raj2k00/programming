@@ -2,9 +2,9 @@
   Problem statement -  https://www.hackerrank.com/challenges/arrays-introduction/problem
   paste the code in the code editor to see the results
 */
-
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+
 int main()
 {
     int n, i = 0;
