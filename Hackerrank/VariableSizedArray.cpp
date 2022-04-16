@@ -35,5 +35,14 @@ int main()
         cout << arr[r][c] << endl;
     }
 
+    // Deleting dynamically allocated memory
+    // Free each sub-array
+    for (int i = 0; i < n; ++i)
+    {
+        delete[] arr[i];
+    }
+    // Free the array of pointers
+    delete[] arr;
+
     return 0;
 }
