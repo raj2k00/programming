@@ -14,7 +14,6 @@ int main()
 
     while (cin >> A[i++]) // Runs the loop while all the inputs are stored
         ;
-
     // prints the array form reverse while the n is true (n is a size of array)
     // !IMPORTANT we are decrementing the n value so once it reached 0 loop ends
     // " && n " checks whether n is true or false if fasle loop terminates
