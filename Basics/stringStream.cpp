@@ -18,6 +18,6 @@ int main()
         cout << word << endl;
         ++count;
     }
-    cout << "Total number of words " << count;
+    cout << "Total number of words are" << count;
     return 0;
 }
