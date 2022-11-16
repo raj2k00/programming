@@ -50,3 +50,36 @@ int main()
 
     return 0;
 }
+
+
+// Class declaration with scope resolution operator ::
+// Usefull for exporting functions
+
+ #include <iostream>
+using namespace std;
+
+class Phone
+{
+    public:
+        int charge;
+        Phone();
+        void use();
+        void getCharge();
+};
+
+Phone::Phone(){
+    charge = 100;
+}
+void Phone::use(){
+    charge -=10;
+}
+void Phone::getCharge(){
+    cout << charge;
+}
+
+int main() {
+    Phone p;
+    p.use();
+    Phone *ptr = &p;
+    ptr->getCharge();
+} 
